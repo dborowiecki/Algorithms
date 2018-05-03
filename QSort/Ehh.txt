@@ -1,0 +1,24 @@
+ /*  big.close();
+
+
+        big=ReadWrite.createFileReader("Rand10k.txt");
+        tempList=ReadWrite.intsFromFile(big);
+        array10k = new AtomicInteger[tempList.size()];
+        array10k = tempList.toArray(testArray);
+
+        //Dla 10tys elemntów
+        qSortTime.TenK=HowLong.sortDuration("quickSort", array10k);
+        array10k = tempList.toArray(testArray);
+
+        randSortTime.TenK=HowLong.sortDuration("randSort", array10k);
+        array10k = tempList.toArray(testArray);
+
+        medianSortTime.TenK=HowLong.sortDuration("medianSort", array10k);
+        array10k = tempList.toArray(testArray);
+
+        withInsertTime.TenK=HowLong.sortDuration("insertSort", array10k);
+
+        System.out.println("QSort: "+qSortTime.TenK+" RanomQuickSort: "+randSortTime.TenK+" MedianQuickSort:"+medianSortTime.TenK);
+        printArray(array10k);
+        tempList.clear();
+        */
