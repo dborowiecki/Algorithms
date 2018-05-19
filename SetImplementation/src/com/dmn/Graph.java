@@ -14,13 +14,13 @@ public class Graph {
         lastVerticleIndex++;
     }
 
-    public void addEdge(int verticleIndex1, int verticleIndex2){
-        getVerticle(verticleIndex1).union(getVerticle(verticleIndex2));
+    public void addEdge(int v1, int v2){
+        getVerticle(v1).union(getVerticle(v2));
     }
 
-    public boolean checkConnection(int verticleIndex1, int verticleIndex2){
+    public boolean checkConnection(int v1, int v2){
         try {
-            return getVerticle(verticleIndex1).findSet() == getVerticle(verticleIndex2).findSet();
+            return getVerticle(v1).findSet() == getVerticle(v2).findSet();
         } catch (Exception e){
             System.err.println("Error "+e);
 

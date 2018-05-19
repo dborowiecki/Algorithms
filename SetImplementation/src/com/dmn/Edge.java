@@ -19,9 +19,9 @@ public class Edge implements Comparator<Edge>, Comparable<Edge> {
         return wage;
     }
 
-    public Edge(Node verticleIndex1Index, Node verticleIndex2Index, int wage){
-        verticle1 = verticleIndex1Index;
-        verticle2 = verticleIndex2Index;
+    public Edge(Node v1Index, Node v2Index, int wage){
+        verticle1 = v1Index;
+        verticle2 = v2Index;
         this.wage = wage;
     }
 

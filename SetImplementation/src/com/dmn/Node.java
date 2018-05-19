@@ -34,6 +34,11 @@ public class Node{
 
     public static Node makeNewSet(int value){
         return new Node(value);
+       /* Node newNode = new Node();
+        newNode.key = value;
+        newNode.rank = 0;
+        newNode.setParent(newNode);
+        return newNode;*/
     }
 
     public Node makeSet(int value){

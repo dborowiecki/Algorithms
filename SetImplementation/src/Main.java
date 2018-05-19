@@ -8,7 +8,7 @@
 
  public class Main {
 
-     static public LinkedList randomNodeList(int len){
+     static public LinkedList<Node> randomNodeList(int len){
          LinkedList<Node> l = new LinkedList<>();
          Random rand = new Random();
          int i = 0;
@@ -19,17 +19,16 @@
 
          return l;
      }
-     public static void graphConnectTest(Graph graph,int verticleIndex1, int verticleIndex2){
-         if (graph.checkConnection(verticleIndex1, verticleIndex2)){
-             System.out.println("Verticle "+verticleIndex1 + " and "+verticleIndex2+" are connected");
+     public static void graphConnectTest(Graph graph,int v1, int v2){
+         if (graph.checkConnection(v1, v2)){
+             System.out.println("Verticle "+v1 + " and "+v2+" are connected");
          }
          else
-             System.out.println("Verticle "+verticleIndex1 + " and "+verticleIndex2+" are not connected");
+             System.out.println("Verticle "+v1 + " and "+v2+" are not connected");
      }
     public static void main(String[] args) {
-         //TEST
         LinkedList<Node> nodeList = randomNodeList(50);
-        //Set implementation
+
         Node n1 = nodeList.get(0);
         Node n2 = nodeList.get(1);
         Node n3 = nodeList.get(6);
